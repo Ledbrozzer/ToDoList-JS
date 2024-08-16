@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+body{
+    background: url("img/background.png");
+}
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+.input-task{
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+.button-add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #003329;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;/*to-put t-button to t-right*/
+    cursor: pointer;
+    font-weight: 700;
+}
+.button-add-task:hover{
+    opacity: 0.8;
+}
+.button-add-task:active{
+    opacity: 0.6;
+}
+.list-task{
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;/*trasition 'll be apply when t-mouse be in it and when the mouse leave it*/
+}
+.task:hover img{
+    opacity: 1;
+}
+.done{
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
